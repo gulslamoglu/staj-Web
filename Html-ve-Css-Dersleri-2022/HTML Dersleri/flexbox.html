@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex; /*bu özellik kutuların yerleştirilmesinde kolaylık sağlar.*/
+            flex-direction: row; /*bu özellik kutuların satır olarak dizilmesini sağlar eğer sütun olarak dizilmesini istersek column diyebiliriz.*/
+            width: 100vw;
+            height: 80vh;
+            background-color: rgb(247, 146, 247);
+            justify-content: space-between; /*Bu özellik kutuların aralarına boşluk bırakarak yerleştirilmesini sağlar.*/
+            align-items: center; /*bu özellik kutuların orta kısımda olmasını sağlar*/
+        }
+
+        .blackbox{
+            width: 120px;
+            height: 120px;
+            background-color: black;
+            order: 2; /*bu özellik kutuların sıralanması içindir. Örneğin kırmızıya 1 verdik yani kırmızı kutu birinci sırada olsun siyah kutular 2. sırada olsun gibi.*/
+        }
+        .redbox{
+            width: 120px;
+            height: 120px;
+            background-color: red;
+            order: 1;
+            flex-grow: 1; /*Bu özellik kutuların genişliğini satıra göre arttırır ve tüm satırı kaplayacak şekilde büyütür*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blackbox"></div>
+        <div class="blackbox"></div>
+        <div class="blackbox"></div>
+        <div class="redbox"></div>
+    </div>
+</body>
+</html>

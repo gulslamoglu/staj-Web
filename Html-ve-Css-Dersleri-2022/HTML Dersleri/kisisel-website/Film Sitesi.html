@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Sitesi</title>
+    
+    
+<style id="custom-cursor" type="text/css">body button, body [type='button'], body input[type='reset'], body input[type='submit'], body [role="button"], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-scrollbar-button, ::-webkit-file-upload-button, [role^=button], .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img,  ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon, body .custom-cursor-on-hover {cursor: url("data:image/png;base64,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") 6 2, pointer !important;} html,body,body select,body .custom-cursor-default-hover {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABQ1JREFUWEe9l3tQVFUcx7+7y0tAtlCX1jbDWUNEBTaFYtcEmkDCF+SgrrCQTUqiiLy0ZggNRwbbRUJpfWNAIhIRDMJi+AAUV1KShxaDbTZAWopNoQKxr+YibKy7iwcyzr/n+/3+Pvee3zn3XBpGHGb+MxwdNzpP5067oWhT3GpvPwaoy0f2jG6WZlLOYIjSNn+UEx/xAY1Op0Oj0SC75CS2iHeIex892Dq6MqbVpgBs1ixZ0ZmXuu+5J61Hik8gcsfWZYC67FlAmABgLCvfn1caIPAxqKHVauEhDLxw7YemhYOTbABmAH4FoBktlHEAOj3hlqxePI39otG8OMkn6swvD8cECHxjBTxProW5OWob6jvLq88kAuqC0UCYAtja8e3V3VNZLxjNKqoqhxZahPgt0ZvPyj+mjUlLDgPU+aQQwwHoALxAp8+HlubdUFgZ7D5zNmmOThcSH9lVXFXGAfA3iXkIwN3DdV7ehpXhcxbwPEGn08CezIKVpRVJhp7mhKwEYduiBAAukZgpgJdXL17RdCwlnWlhbkHiGVFTVnMGQdHv+QOqKpIwmp0d83NFuTzKnmmw4wb8KpUKh74+jraOJrDtudgkXAubCdYmsxPSdyozcvZTO+M+EcBS34DrJZnZJhc7Nj0BQe+egK+PFs3NgDhlIXK2G2/0xtYb8H4/JOth95/RJMUpDS3Yf2lrkeTgTGOGB48eIqXIBekSlW56XxYNvpzzcOE66VmOFOcjWZqe//vdO2sB9BMDOLDYxxWn6tZMsDJsuIc9j5BSNAsSsT6AD+ccZnP1mZOlEs2uA3veIG2+IUCqCXnb1m3+LjX6Q+o0MxgxkjgIIwvA5wOtrcCujwXISf7KQEf1ilf48ivfX7/mSfr0A0swKF4ZESw8GrUqwnb61JfQr1SCPYU1MKVUKiEtzMFPtxvAYjohNmw9bK1tjNbYm5+N2LQkVwAtpBDDD6IpYDCWAwj8NDYpOD48kjRDp2tu+xG8Vf7roVYfJjUbHMWTJ7Ny2yvrRZYWlqQZOt0vtzvADfTaAo0mk9RsAPD2Qr8rp7Jy5pMGDNdVXDyHpVERQYC6lNRvAODpNu+sPK/sTVMB1VflYNpOBM95jp5ErVZj8abwjqq689T+7BszAN3MbFtDwek0V6dZRjNEO+Lg4MiBvcoc0cK1mGhji3t/3Mfm3dv/KpQVB45lGz5ZyHreXJ68JCPbdSrLQTdHXUSSpRKtJWcSLTEhEY1NTThZUABlbx+O5H7R0N/b8w6AdtInH34OGPNMcmCx94YGBq/ymO3GuNN1FyXnKttqr9THvDqfl1pbU8uj7olDIy4+vu+ANItaE8WzAhjKeR6A8+CH5SYALcAIPHDoYHm4SKSr1d3dDT6ff/ZnxU2/xxryYfpWPEKG43SuTC6XBzCZTJ2qtLQUwtXCCECdS17+35NwNB5Ky43csPF6xp49eh+QUJGo65uiQqp7u0gDx/QGBsLpZgmyigqxt7e3rlZnZycEAkHuvbu/Rfz/AADDydmlpqa6WjB8KaRSKRLiE98CVGdJIMb+Bh6nO65eE9qYfTRb1wzUH9SigABF3YWauQB6nwbxXwEAMFZ8tjezaP26dbpazS0t4C/gJ2n6+3eNAwBgY2eXUXGqYouHh4eu3mter1e0NF5bPC4AAMy5M16pkskqvTkcDuSXL8Nvkd/4vYHBp2Tas1hid1c394uX6k739/TsJLkb/gP2Ea8wril0SgAAAABJRU5ErkJggg==") 9 1, auto !important;}</style><link rel="stylesheet" href="./Film Sitesi_files/style.css"><link rel="stylesheet" href="./Film Sitesi_files/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></head>
+<body data-new-gr-c-s-check-loaded="14.1191.0" data-gr-ext-installed="">
+
+    <!--! navbar -->
+    <div class="navbar">
+        <div class="navbar-wrapper">
+            <div class="logo-wrapper">
+                <h1 class="logo">LOGO</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-items active">Anasayfa</li>
+                    <li class="menu-list-items">Filmler</li>
+                    <li class="menu-list-items">Diziler</li>
+                    <li class="menu-list-items">Listem</li>
+                    <li class="menu-list-items">Popüler</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="./Film Sitesi_files/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Hesabım</span>
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+                <div class="toggle">
+                    <i class="bi bi-brightness-high-fill toggle-icon"></i>
+                    <i class="bi bi-moon-fill toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! navbar -->
+
+
+    <!--! sidebar -->
+    <div class="sidebar">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-house-door-fill"></i>
+            <i class="bi bi-people-fill"></i>
+            <i class="bi bi-bookmarks-fill"></i>
+            <i class="bi bi-hourglass-split"></i>
+            <i class="bi bi-cart-fill"></i>
+            <i class="bi bi-gear-fill"></i>
+    </div>
+    <!--! sidebar -->
+
+    <!--! Anasayfa -->
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="featured-content">
+                <img class="featured-title" src="./Film Sitesi_files/spiderman-title.png">
+                <p class="featured-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam sapiente temporibus quod ducimus aliquam commodi, cumque architecto ipsum, quos hic officia qui dolorem voluptate obcaecati dolorum deserunt porro est doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos ratione quia excepturi quae. Alias est suscipit nesciunt at ipsa eligendi consequuntur dolorum quod blanditiis quas a omnis, libero asperiores.</p>
+                <div class="featured-buttons">
+                    <button class="play-button">
+                        <i class="bi bi-play-circle"></i>
+                        Oynat
+                    </button>
+                    <button class="info-button">
+                        <i class="bi bi-info-circle"></i>
+                        Daha fazla bilgi
+                    </button>
+                </div>
+            </div>
+
+            <div class="movie-list-filter">
+                <select>
+                    <option>Aksiyon</option>
+                    <option>Macera</option>
+                    <option>Bilim Kurgu</option>
+                </select>
+            </div>
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Popüler</h1>
+                <div class="movie-list-wrapper">
+                    <ul class="movie-list">
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f1.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">SPIDER-MAN</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f2.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">HULK</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f3.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">G.O.R.A.</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill custom-cursor-on-hover"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f4.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">DAREDEVIL</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f5.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">HOBBIT</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f6.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">A.R.O.G</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f7.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">DARK</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Gündemdekiler</h1>
+                <div class="movie-list-wrapper">
+                    <ul class="movie-list">
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f6.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">A.R.O.G</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f7.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">DARK</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f5.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">HOBBIT</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f3.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">G.O.R.A.</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f1.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">SPIDER-MAN</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f2.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">HULK</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f4.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">DAREDEVIL</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Yeni Çıkanlar</h1>
+                <div class="movie-list-wrapper">
+                    <ul class="movie-list">
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f1.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">SPIDER-MAN</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f2.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">HULK</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f3.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">G.O.R.A.</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f4.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">DAREDEVIL</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f5.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">HOBBIT</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f6.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">A.R.O.G</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="movie-item">
+                            <img class="movie-img" src="./Film Sitesi_files/f7.jpg">
+                            <div class="movie-info">
+                                <span class="movie-item-title">DARK</span>
+                                <div class="movie-item-buttons">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Anasayfa -->
+
+ 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<deepl-input-controller><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div dir="ltr" style="visibility: initial !important;"><div class="dl-input-translation-container svelte-95aucy"><div></div></div></div></template></deepl-input-controller></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

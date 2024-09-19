@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.searchbox{
+    background-color: darkgrey;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+
+.sbox{
+    background: none;
+    color: aliceblue;
+    float: left;
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    width: 0;
+    transition: 1s;
+}
+
+.btn-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    padding: 10px;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    
+}
+
+.searchbox:hover > .sbox{
+    width: 200px;
+
+}

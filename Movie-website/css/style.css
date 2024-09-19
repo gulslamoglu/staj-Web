@@ -1,0 +1,363 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/*! base css start */
+
+*{
+    margin: 0;
+}
+
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*! base css end */
+
+.container{
+    background: black;
+    color: white;
+}
+
+/*! navbar start */
+.navbar{
+    background-color: black;
+    height: 60px;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar .navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.logo{
+    font-size: 30px;
+    color: rgb(255, 70, 70);
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    padding: 0;
+}
+
+.menu-list-items{
+    cursor: pointer;
+}
+
+.menu-list-items:hover{
+    font-weight: bold;
+}
+
+.menu-list-items.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-text-container{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    line-height: 1;
+}
+
+
+.toggle{
+    width: 40px;
+    background-color: white;
+    height: 20px;
+    position: relative;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 1px;
+    transition: 0.5s all ease;
+}
+/*! navbar end */
+
+
+/*! sidebar start */
+.sidebar{
+    background-color: black;
+    height: 100%;
+    color: white;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    row-gap: 40px;
+    position: fixed;
+    top: 0;
+}
+
+.sidebar i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*! sidebar end */
+
+
+/*! featured start */
+.content-wrapper{
+    margin-left: 50px;
+
+}
+
+.featured-content{
+    background: url("/images/spiderman.jpg");
+    padding: 50px;
+    height: calc(100vh - 160px);
+    background-size: 100% 100%;
+}
+
+.featured-title{
+    width: 400px;
+}
+
+.featured-desc{
+    background: rgba(255, 255, 255, 0.5);
+    width: 500px;
+    margin: 30px 0;
+    padding: 10px;
+    font-size: 18px;
+    color:black
+}
+
+.featured-buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.featured-buttons .play-button{
+    background-color: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.featured-buttons .info-button{
+    background-color: rgba(78, 76, 76, 0.514);
+    border: none;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    border-radius: 2px;
+}
+
+
+.movie-list-filter{
+    margin:50px 20px;
+}
+.movie-list-filter select{
+    border: 0.px solid white;
+    background: transparent;
+    color: white;
+    padding: 7px 2px;
+    width: 120px;
+}
+.movie-list-filter select option{
+    border: 0.px solid white;
+    background: black;
+    color: white;
+    padding: 6px 0;
+    width: 120px;
+}
+
+.movie-list-container{
+    margin-left: 20px;
+}
+
+
+.movie-list .movie-item .movie-img{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 30px;    
+    transform: translateX(0);
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+.movie-item{
+    position:relative;
+}
+
+.movie-item:hover .movie-item-title, 
+.movie-item:hover .movie-item-buttons
+{
+    opacity: 1;   
+}
+
+.movie-item:hover .movie-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.movie-item-title{
+    background-color: rgba(40, 40, 40, 0.4);
+    padding: 0 10px;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.movie-item-buttons{
+    background-color: rgba(40, 40, 40, 0.4);
+    padding:10px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    display: flex;
+    column-gap: 20px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-item-buttons i{
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 20px;
+    transition: 0.5s all ease-in-out;
+}
+.movie-item-buttons i:hover{
+    opacity:1 ;
+}
+
+
+.arrow{
+    width: 100px;
+    display: flex;
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    opacity: 0.5;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    opacity: 1;
+}
+
+/*! featured end */
+
+/*! Dark mode start */
+.container.active{ 
+    background-color: white;
+}
+
+.navbar.active{
+    background-color: white;
+    color: black;
+}
+.sidebar.active{
+    background-color: white;
+}
+.sidebar i.active{
+    color: black;
+}
+.toggle.active{
+   background-color: black;
+}
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+.movie-list-filter select.active{
+    background-color: white;
+    color: black;
+}
+.movie-list-title.active{
+    color: black;
+}
+
+/*! Dark mode end */
+
+
+/*! responsive start */
+@media only screen and (max-width: 800px) {
+    .menu-container{
+        display: none;
+    }
+
+    .featured-title{
+        width: 200px;
+    }
+
+    .featured-content{
+        height: 50vh;
+    }
+
+    .featured-desc{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+        -webkit-box-orient: vertical;
+        max-width: 200px;
+        padding: 0;
+    }
+}
+
+/*! responsive end */

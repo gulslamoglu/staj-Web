@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>jquery</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <style>
+            .renklendir{
+                color: purple;
+                font-size: 22px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <p id="p1">sıfırdan ileri düzey web geliştirme</p>
+        <p id="p2">sıfırdan ileri düzey web geliştirme</p>
+        <p class="paragraf">sıfırdan ileri düzey web geliştirme</p>
+        <p class="paragraf">sıfırdan ileri düzey web geliştirme</p>
+       <script>
+            $(function(){
+                $("#p1").click(function(){
+                    console.log("tıklandı");
+                    $("this").addClass("renklendir"); //burada #p1 dememe sebebimiz eğer id değilde class olursa ve aynı clasatn birden fazla olursa tıklandığında tüm classlar birden bu görevi yapar. Ama this verirsek sadece neye tıklandıysa o görevi yapar.
+                })
+            })
+       </script>
+    </body>
+</html>

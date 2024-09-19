@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* !important ifadesi değiştirilemez anlamına gelir. Yani eğer bu ifadeyi kullanmasaydık yazı rengi ilk başta kırmızı olarak daha sonra yeşil seçildiği için alt satır okunduğunda yeşil olarak değiştirilip nihayetinde sayfada yeşil olarak gösterilecekti. Fakat important ifadei ile rengin red olarak kalması ve değiştirilmemesi gerektiği belirlenir. */
+        h1{
+            color: red !important;
+            /* color: rgb(33, 162, 241); rgb olarak vermek istersek; */
+            opacity: 0.5; /* 0'2a yaklaştıkça yazı saydamlaşır, 1'e yaklaştıkça yazı opaklaşır daha belirgin olur */
+            /* eğer opaklık ve rengi tek bir satırda yazmak istersek: */
+            /* color: rgba(33, 162, 241, 0.5); */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: green;">gül</h1>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function KOPYA()
+        {
+            document.getElementById("alan2").value=document.getElementById("alan1").value;
+            document.getElementById("alan3").value=document.getElementById("alan1").value;
+        }
+    </script>
+</head>
+<body>
+        1.ALAN: <input type="text" id="alan1" value="GUZEL YURDUM TURKIYE..."><br>
+           2.ALAN: <input type="text" id="alan2">
+               3.ALAN: <input type="text" id="alan3">                <br><br>
+                <button onclick="KOPYA()">METNI KOPYALA</button>
+               
+                <p>Düğme tıklanınca bir alanından 2 ve 3 alanına kopyalama yapılıyor</p>
+</body>
+</html>

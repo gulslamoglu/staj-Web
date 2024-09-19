@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+        <hr>
+    </header>
+
+
+    <h2>Hesap Bilgileriniz</h2>
+    <table>
+        <tr>
+            <td>
+                <label for="k_adi">Kullanıcı Adı: </label>
+            </td>
+            <td style="width: 50px;"></td>
+            <td>
+                <input type="text" id="k_adi"  placeholder="Kullanıcı adı giriniz">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Eposta: </label>
+            </td>
+            <td style="width: 50px;"></td>
+            <td>
+                <input type="email" name="email" id="email"  placeholder="Email giriniz">
+            </td>
+        </tr>
+        <tr>
+            <td> 
+                <label for="parola">Parola: </label>
+            </td>
+            <td style="width: 50px;"></td>
+            <td>
+                <input type="text" id="parola"  placeholder="Parola giriniz">
+            </td>
+        </tr>
+    </table>
+        
+     
+
+    <h2>Kişisel Bilgileriniz</h2>
+    <form action="action_page.php">
+        
+        
+        <div>
+            <label for="adi">Adınız: </label>
+            <input type="text" id="adi"  placeholder="Adınız">
+        </div>
+
+        <div>
+            <label for="soyad">Eposta: </label>
+            <input type="text" id="soyad" placeholder="Soyadınız">
+        </div>
+
+        <div>
+            <label for="sehir">Şehir: </label>
+            <select name="sehir" id="sehir">
+                <option value="34">İstanbul</option>
+                <option value="41">Kocaeli</option>
+                <option value="53">Rize</option>
+            </select>
+        </div>
+
+        <div>
+            
+            <label for="sex">Cinsiyet: </label>
+            <input type="radio" id="sex" name="sex" value="Erkek">
+            <label for="sex">Erkek</label>
+            <input type="radio" id="sex2" name="sex" value="Kadın">
+            <label for="sex2">Kadın</label>
+        </div>
+
+        <div>
+            <label for="hobi">Hobileriniz: </label>
+            <input type="checkbox" name="hobi" id="hobi">
+            <label for="hobi">Sinema</label>
+            <input type="checkbox" name="hobi" id="hobi1">
+            <label for="hobi1">Gezmek</label>
+            <input type="checkbox" name="hobi" id="hobi2">
+            <label for="hobi2">Spor</label>
+            <input type="checkbox" name="hobi" id="hobi3">
+            <label for="hobi3">Kitap</label>
+            <input type="checkbox" name="hobi" id="hobi4">
+            <label for="hobi4">Mars ve elsayı sevmek</label>
+        </div>
+
+        <div>
+            <input type="button" value="Kaydet">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>jquery</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <style>
+
+        </style>
+
+    </head>
+    <body>
+        <p>
+            ad: <input class="control" type="text"></input>
+        </p>
+        <p>
+            öğrenci durumu: <select class="control" >
+                <option value="ilkokul">mareşal</option>
+                <option value="ortaokul">mareşal</option>
+                <option value="lise">baal</option>
+                <option value="üniversite">kocaeli üniversitesi</option>
+            </select>
+        </p>
+
+       <script>
+            $(function(){
+                $(".control").change(function(){
+                    console.log($(this).val());
+                })
+            });
+       </script>
+    </body>
+</html>

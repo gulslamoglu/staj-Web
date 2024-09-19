@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            border-collapse: collapse; /*kenarları birleştir demek*/
+            width: 80%;
+        }
+
+        th{
+            background-color: rgba(0, 0, 0, 0.575);
+            color: aliceblue;
+            text-align: left;
+            padding: 5px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tr:nth-child(even){
+            background-color: blanchedalmond;
+        }
+
+        tr:hover{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+   <table>
+         <!-- thead kısmı tablonun başlıklarını eklemek için kullanılır. -->
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th> Last name</th>
+                <th>email</th>
+            </tr>
+        </thead>
+
+        <!-- tbody kısmı tablonun verilerini eklemek için kullanılır. -->
+        <tbody>
+            <tr>
+                <td>Debra</td>
+                <td>Burks</td>
+                <td>asdfghjmkö@hotmail.com</td>
+            </tr>
+
+            <tr>
+                <td>kasha</td>
+                <td>todd</td>
+                <td>asdfghjmkö@hotmail.com</td>
+            </tr>
+
+            <tr>
+                <td>tameka</td>
+                <td>fisher</td>
+                <td>asdfghjmkö@hotmail.com</td>
+            </tr>
+
+            <tr>
+                <td>daryl</td>
+                <td>spence</td>
+                <td>asdfghjmkö@hotmail.com</td>
+            </tr>
+        </tbody>
+   </table>
+</body>
+</html>

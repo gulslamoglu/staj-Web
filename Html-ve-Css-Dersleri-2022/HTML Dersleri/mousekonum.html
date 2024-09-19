@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            #ornek{
+                background-color: blue;
+                min-width:50vw; 
+                min-height:50vh;
+                margin: 0;
+                padding: 0;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="ornek" >
+        </canvas>
+        <script>
+            var canvas = document.getElementById('ornek');
+            var context = canvas.getContext('2d');
+            canvas.addEventListener('mousemove', handleMoveEvent, false);
+
+            function handleMoveEvent(olay) {
+                var mousePos = getMousePos(canvas, olay);
+                var ileti = 'Mouse KONUMU: ' + mousePos.x + ',' + mousePos.y;
+                YAZileti(canvas, ileti);
+            }
+
+        function YAZileti(canvas, ileti) {
+            var context = canvas.getContext('2d');
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.fillStyle = 'black';
+            context.font = '20px Courier';
+            context.fillText(ileti, 15, 30);
+        }
+       
+        function getMousePos(canvas, olay) {
+            var rect = canvas.getBoundingClientRect();
+            return {
+                x: olay.clientX - rect.left,
+                y: olay.clientY - rect.top
+            };
+        }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .redbox{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            z-index: 1;
+        }
+
+        .ybox{
+            position: relative;
+            left: 50px;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            z-index: -1;
+        }
+
+        /* Burada yapılmak istenen şey ortada bulunan sarı bloğu sola kaydırmak fakat bunu yaparken sarı bloğun yanındaki iki kırmızı bloğu hareket ettirmemek. Bunun için position: relative özelliğini kullanıyoruz. Sola kaydırmak için de left özelliğini kullanıyoruz. Böylece sarı blok 550px sola kayarak kırmızı kutunun bir kısmını kaplar. Eğer sarı bloğun kırmızının üstüne bindiği kısım kırmızının altında kalsın istersek bunun için z-indek özelliğini kullanırız. Üstte kalacak bloğa diğer bloktan daha yüksek bir z-indek sayısı verirsek bu durum gerçekleşir. Eğer relative yerine absolute seçeneğini seçersek o zaman kaydırılmak istenen blok bulunduğu konumdan değil sayfanın (0,0) mutlak noktasından yani en sol üst köşeden 50 px kaydırılır.Eğer fixed seçeneğini seçersek o zaman da sayfa aşağı yukarı kaydırılsa bile blok nereye kaydırıldıysa orada durur.*/
+    </style>
+</head>
+<body>
+    <div class="redbox"></div>
+    <div class="redbox"></div>
+    <div class="ybox"></div>
+    <div class="redbox"></div>
+    <div class="redbox"></div>
+</body>
+</html>

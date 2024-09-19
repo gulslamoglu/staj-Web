@@ -1,0 +1,49 @@
+body{
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+}
+
+
+.btn{
+    background: #ffc107;
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn::before{
+    content:"Hover Me";
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s;
+}
+
+.btn:hover::before{
+    top: -30%;
+}
+
+.btn::after{
+    content:"❤️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 130%;
+    transition: all 0.5s;
+    font-size: 35px;
+}
+
+.btn:hover::after{
+    top: 50%;
+}

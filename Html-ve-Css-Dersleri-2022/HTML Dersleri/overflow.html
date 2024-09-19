@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            background-color: yellow;
+            font-size: 24px;
+            width: 200px;
+            height: 200px;
+            /* Burada yazı kısmı background kısmına sığmıyor. Yazı kısmı biraz taşıyor. Bunun için overflow özelliğini kullanıyoruz. Eğer auto dersek sığmayan kısımlar için bir scroll bar oluşturur. Eğer hidden dersek taşan kısmı göstermez. Sadece sığan kısmı gösterir */
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consectetur asperiores quia laudantium quidem praesentium autem? Quae voluptates magni, consectetur autem tempore, voluptatum accusantium suscipit harum eos magnam error enim?</p>
+    </div>
+</body>
+</html>

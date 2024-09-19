@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: color #1E1E1E;;
+        }
+        .btnblue{
+            width: 150px;
+            height: 50px;
+            background-color: #21a2f1;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            color: #1E1E1E;
+            border: none; 
+            outline: none; /*TIKLANINCXA OLUŞAN ÇİZGİYİ KALDIRIR*/
+            cursor: pointer; /*butonun üzerine gelince mouseun şekli değişir*/
+            transition: 0.5ms; /*butonun üzerine gelindiğinde değişikliklerin uygulanması süresi geciktirilir.*/
+        }
+
+        .btnblue:hover{
+            background-color: transparent;
+            color: #21a2f1;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" class="btnblue" value="kayıt ol">
+</body>
+</html>

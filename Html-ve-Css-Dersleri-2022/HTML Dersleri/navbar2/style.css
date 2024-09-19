@@ -1,0 +1,88 @@
+body{
+    background-image: url(fantasy-4367602_960_720.jpg);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+.menu-bar{
+    background: #5b71b5;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu-bar ul li:hover{
+    background: #d4c995;
+    border-radius: 10px;
+}
+
+.menu-bar .fa-solid{
+    margin-right: 8px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #5b71b5;
+    margin-top: 15px;
+    margin-left: -15px;
+    font-size: 10px;
+}
+
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background:transparent;
+    text-align: left;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul a:hover{
+    color: yellow;
+}
+
+
+.fa-caret-right{
+    font-size: 14px;
+    color: white;
+    float: right;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #5b71b5;
+}

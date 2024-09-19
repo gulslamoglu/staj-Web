@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>jquery</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <style>
+            .highlight{
+                background-color: gray;
+            }
+            .orange{
+                background-color: orange;
+            }
+        </style>
+
+    </head>
+    <body>
+        <a href="#">link1</a>
+        <h3 id="header">Kurslarım</h3>
+        <ul id="liste">
+            <li class="item1">web geliştirme</li>
+            <li>python programlama <a href="#">1link2</a></li>
+            <li>mobil uygulama geliştirme</li>
+        </ul>
+        <input id="name" type="text"  placeholder="adınızı girin">
+        <input id="surname" type="text"  placeholder="soyadınızı girin">
+        <button id="btnKayitol" onclick="kayitOl();">Submit</button>
+       <script>
+
+        //val() methodu
+            function kayitOl(){
+                var name= $("#name").val(); //val ifadesi inputa girilen name ve surname değerlerini almak için kullanılır.
+                var surname = $("#surname").val();
+
+                // console.log(name+" "+surname+ " oturum açtı.");
+                console.log(`${name} ${surname} oturum açtı.`);
+
+                $("#name").addClass("highlight");
+                $("#surname").addClass("orange");
+            }
+       </script>
+    </body>
+</html>

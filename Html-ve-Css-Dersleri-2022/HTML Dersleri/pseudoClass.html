@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tbox{
+            width: 120px;
+            height: 25px;
+        }
+        .tbox:hover{
+            /* Bu özellik mouse etiketin üzerine geldiğinde yapılacak işlemler içindir. */
+            background-color: rebeccapurple;
+        }
+        .tbox:focus{
+            /* Bu özellik etiketin üzerinde tıklandığında yapılacak işlemler içindir. */
+            background-color:antiquewhite;
+        }
+        .pclass::first-line{
+            /* Bu özellik paragrafın ilk satırına yapılacak işlemler içindir.Eğer ilk satır değil de ilk harf yapılmak isterse first-letter getirilebilir. */
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" class="tbox">
+    <p class="pclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum enim magni illum totam, perferendis corrupti nesciunt incidunt nihil cum repellat reiciendis repudiandae rem et provident nisi officia unde odit velit placeat nam saepe aliquam eligendi. Ab repellat recusandae a veniam, ipsam hic sequi! Repellat culpa velit harum repudiandae sequi, fuga maxime consequuntur beatae asperiores, doloremque laboriosam nulla delectus maiores adipisci.</p>
+</body>
+</html>
